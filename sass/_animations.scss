@@ -1,0 +1,42 @@
+.transform_img:hover {
+	cursor: pointer;
+	transform: scale(0.9);
+	transition: 0.1s;
+}
+
+button {
+	padding: 0.8em 1.8em;
+	border: 2px solid $mainColor;
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $textMd;
+	transition: .3s;
+	z-index: 1;
+	color: $mainColor;
+	font-family: $mainFont;
+}
+
+button::before {
+	content: '';
+	width: 0;
+	height: 300%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background: $mainColor;
+	transition: .5s ease;
+	display: block;
+	z-index: -1;
+}
+
+button:hover::before {
+	width: 105%;
+}
+
+button:hover {
+	color: #111;
+}

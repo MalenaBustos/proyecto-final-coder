@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:ital,wght@0,400;0,500;1,300&family=Overpass:wght@200&family=Red+Hat+Display:wght@300&display=swap");
+.color {
+  background-color: #f4acb7;
+}
+
+.color2 {
+  background-color: #ffcad4;
+}
+
+.color3 {
+  background-color: #ffe5d9;
+}
+
+.text1 {
+  font-family: "Overpass", sans-serif;
+}
+
+.text2 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.text3 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.botonera {
+  background-color: #f4acb7;
+}
+.botonera div div a {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
+  color: #0F0E0E;
+}
+
+.body {
+  background-color: #fcf8ec;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.prom {
+  background-color: #ffcad4;
+  width: 500px;
+}
+.prom img {
+  width: 100%;
+}
+.prom p {
+  width: 100%;
+  text-align: center;
+}
+
+.img {
+  width: 35%;
+}
+
+.transform_img:hover {
+  cursor: pointer;
+  transform: scaleX(0.9);
+  transform: scaleY(0.9);
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #f4acb7;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  transition: 0.3s;
+  z-index: 1;
+  color: #f4acb7;
+  font-family: "Overpass", sans-serif;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #f4acb7;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+}
+
+.footer {
+  background-color: #ffcad4;
+}
+
+.footer__icon {
+  display: flex;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.footer__maps {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}/*# sourceMappingURL=style.css.map */
